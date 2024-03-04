@@ -1,0 +1,18 @@
+*{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.search-box{
+    min-width: 350px;
+    outline: none;
+    position: relative;
+}   
+.sub-cat li a{
+    text-transform: capitalize;
+    color: #FF3F6c;
+}
+.sub-cat li:hover{
+    background-color: #f5c5d078;    
+}
