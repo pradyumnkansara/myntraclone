@@ -7,13 +7,33 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Header from './Common/Header';
 import Footer from './Common/Footer';
+import Home from './Pages/Home';
+import Product from './Pages/Product';
+import ProductDetails from './Pages/ProductDetails';
+import LogIn from './Pages/LogIn';
+import Register from './Pages/Register';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Header />
+    element: <Home />
   },
-
+  {
+    path: '/product',
+    element: <Product />
+  },
+  {
+    path: '/product-detail',
+    element: <ProductDetails />
+  },
+  {
+    path: '/login',
+    element: <LogIn/>
+  },
+  {
+    path: '/register',
+    element: <Register/>
+  },
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

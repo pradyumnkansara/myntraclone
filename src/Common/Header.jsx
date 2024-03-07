@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
-        <Navbar expand="lg" className="bg-body-white shadow-sm">
+        <Navbar expand="lg" className="bg-body-white shadow-sm p-0">
             <Container fluid className='px-4'>
                 <Navbar.Brand href="#">
                     <img src={logo} width={100} />
@@ -37,9 +37,9 @@ export default function Header() {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link className='fw-bold text-black text-uppercase position-relative '>
+                            <Link className='fw-bold text-black text-uppercase position-relative d-block px-2 py-lg-4 py-2 cat'>
                                 Men
-                                <ul className='sub-cat position-absolute top-100 left-0 bg-white shadow p-0'>
+                                <ul className='sub-cat position-absolute left-0 bg-white shadow p-0 m-0' style={{ top: '100%', width: '200px' }}>
                                     <li className='px-4 py-2 pe-5'>
                                         <Link>Topwear</Link>
                                     </li>
@@ -56,9 +56,47 @@ export default function Header() {
                                         <Link>Topwear</Link>
                                     </li>
                                 </ul>
-                            </Nav.Link>
-                            <Nav.Link className='fw-bold text-black text-uppercase'>Women</Nav.Link>
-                            <Nav.Link className='fw-bold text-black text-uppercase'>Kids</Nav.Link>
+                            </Link>
+                            <Link className='fw-bold text-black text-uppercase position-relative d-block px-2 py-lg-4 py-2 cat'>
+                                Women
+                                <ul className='sub-cat position-absolute left-0 bg-white shadow p-0 m-0' style={{ top: '100%', width: '200px' }}>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear</Link>
+                                    </li>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear </Link>
+                                    </li>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear</Link>
+                                    </li>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear</Link>
+                                    </li>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear</Link>
+                                    </li>
+                                </ul>
+                            </Link>
+                            <Link className='fw-bold text-black text-uppercase position-relative d-block px-2 py-lg-4 py-2 cat'>
+                                Kids
+                                <ul className='sub-cat position-absolute left-0 bg-white shadow p-0 m-0' style={{ top: '100%', width: '200px' }}>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear</Link>
+                                    </li>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear </Link>
+                                    </li>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear</Link>
+                                    </li>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear</Link>
+                                    </li>
+                                    <li className='px-4 py-2 pe-5'>
+                                        <Link>Topwear</Link>
+                                    </li>
+                                </ul>
+                            </Link>
 
                         </Nav>
                         <Form className="pe-5 position-relative ms-auto me-5 me-lg-0" >
@@ -67,31 +105,73 @@ export default function Header() {
                         </Form>
 
                         <Nav className='align-items-center flex-row'>
-
-                            <Nav.Link href="#action1" className='fw-semibold text-black px-2 fs-5' >
-                                <div className='text-center'>
-                                    <FontAwesomeIcon icon={faBagShopping} />
-                                    <div className='fw-medium' style={{ fontSize: '12px' }}>
-                                        Bag
-                                    </div>
-                                </div>
-                            </Nav.Link>
-                            <Nav.Link href="#action1" className='fw-bold text-black px-2 fs-5'>
-                                <div className='text-center'>
-                                    <FontAwesomeIcon icon={faHeart} />
-                                    <div className='fw-medium' style={{ fontSize: '12px' }}>
-                                        Whishlist
-                                    </div>
-                                </div>
-                            </Nav.Link>
-                            <Nav.Link href="#action1" className='fw-bold text-black px-2 fs-5'>
+                            <Link href="#action1" className='fw-semibold text-black px-2 fs-5 py-lg-3 py-2 position-relative profile' >
                                 <div className='text-center'>
                                     <FontAwesomeIcon icon={faUser} />
                                     <div className='fw-medium' style={{ fontSize: '12px' }}>
                                         Profile
                                     </div>
                                 </div>
-                            </Nav.Link>
+                                <div className='position-absolute top-100 bg-white text-secondary shadow p-3 profile-box' style={{ width: '250px', right: '-150%' }}>
+                                    <div className='border-bottom pb-3'>
+                                        <h6 className='m-0' style={{ lineHeight: '0.3' }}>Welcome</h6>
+                                        <span className='' style={{ fontSize: '12px' }}>To aceess account and manage order</span>
+                                        <div>
+                                            <button className='text-uppercase p-2 bg-white fw-bold border login-btn mt-2' style={{ fontSize: '14px', color: '#FF3F6c' }}>login/signup</button>
+                                        </div>
+                                    </div>
+                                    <ul className='sub-profile m-0 p-0 py-2 border-bottom'>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                    </ul>
+                                    <ul className='sub-profile m-0 p-0 py-2 '>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Orders</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </Link>
+                            <Link href="#action1" className='fw-bold text-black px-2 fs-5 py-lg-3 py-2'>
+                                <div className='text-center'>
+                                    <FontAwesomeIcon icon={faHeart} />
+                                    <div className='fw-medium' style={{ fontSize: '12px' }}>
+                                        Whishlist
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="#action1" className='fw-bold text-black px-2 fs-5 py-lg-3 py-2'>
+                                <div className='text-center'>
+                                    <FontAwesomeIcon icon={faBagShopping} />
+                                    <div className='fw-medium position-relative' style={{ fontSize: '12px' }}>
+                                        Bag
+                                    </div>
+                                </div>
+                            </Link>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
