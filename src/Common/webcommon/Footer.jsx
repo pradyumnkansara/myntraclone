@@ -3,12 +3,12 @@ import { Col, Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 import './footer.css';
-import playstore from '../img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png'
-import applestore from '../img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png'
+import playstore from '../../img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png'
+import applestore from '../../img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagramSquare, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import hundred from '../img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png'
-import forteen from '../img/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png'
+import hundred from '../../img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png'
+import forteen from '../../img/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png'
 
 export default function Footer() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../Common/Header'
+import Header from '../../Common/webcommon/Header'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 

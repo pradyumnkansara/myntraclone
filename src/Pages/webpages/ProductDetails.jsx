@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from '../Common/Header'
+import Header from '../../Common/webcommon/Header'
 import { Col, Container, Row } from 'react-bootstrap';
-import collage1 from '../img/c097aded-8dfb-497d-87c0-e0ef5ec5c8761695179114326StormbornMenBrownPrintedPoloCollarPocketsT-shirt1.avif'
-import Footer from '../Common/Footer';
+import collage1 from '../../img/c097aded-8dfb-497d-87c0-e0ef5ec5c8761695179114326StormbornMenBrownPrintedPoloCollarPocketsT-shirt1.avif'
+import Footer from '../../Common/webcommon/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faShoppingBag, faStar, faTruck, faTruckArrowRight } from '@fortawesome/free-solid-svg-icons';
-import morecolor from '../img/fa62b245-7ad3-4832-8e1f-ee97c5737a841694061938902-Stormborn-Men-Tshirts-1351694061938486-1.webp'
+import morecolor from '../../img/fa62b245-7ad3-4832-8e1f-ee97c5737a841694061938902-Stormborn-Men-Tshirts-1351694061938486-1.webp'
 import { Link } from 'react-router-dom';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import Header from '../Common/Header'
+import Header from '../../Common/webcommon/Header'
 import { Col, Container, Row } from 'react-bootstrap'
-import stormborn from '../img/c097aded-8dfb-497d-87c0-e0ef5ec5c8761695179114326StormbornMenBrownPrintedPoloCollarPocketsT-shirt1.webp';
+import stormborn from '../../img/c097aded-8dfb-497d-87c0-e0ef5ec5c8761695179114326StormbornMenBrownPrintedPoloCollarPocketsT-shirt1.webp';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
-import Footer from '../Common/Footer';
+import Footer from '../../Common/webcommon/Footer';
 
 export default function Product() {
     return (

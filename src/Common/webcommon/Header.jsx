@@ -6,11 +6,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import logo from '../img/myntra.png'
+import logo from '../../img/myntra.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping, faHeart, faUser } from '@fortawesome/free-solid-svg-icons';
 import './header.css';
-import searchicon from '../img/8666693_search_icon.png'
+import searchicon from '../../img/8666693_search_icon.png'
 import { Link } from 'react-router-dom';
 
 export default function Header() {
@@ -125,33 +125,41 @@ export default function Header() {
                                             <Link className=' text-secondary'>Orders</Link>
                                         </li>
                                         <li>
-                                            <Link className=' text-secondary'>Orders</Link>
+                                            <Link className=' text-secondary'>Whishlist</Link>
                                         </li>
                                         <li>
-                                            <Link className=' text-secondary'>Orders</Link>
+                                            <Link className=' text-secondary'>Gift Cards</Link>
                                         </li>
                                         <li>
-                                            <Link className=' text-secondary'>Orders</Link>
+                                            <Link to={'/contact-us'} className=' text-secondary'>contact us</Link>
                                         </li>
                                         <li>
-                                            <Link className=' text-secondary'>Orders</Link>
+                                            <Link className=' text-secondary'>Myntra insider</Link>
+                                        </li>
+                                    </ul>
+                                    <ul className='sub-profile m-0 p-0 py-2 border-bottom'>
+                                        <li>
+                                            <Link className=' text-secondary'>Myntra Credits</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Coupons</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Saved Cards</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Saved VPA</Link>
+                                        </li>
+                                        <li>
+                                            <Link className=' text-secondary'>Saved Adressess</Link>
                                         </li>
                                     </ul>
                                     <ul className='sub-profile m-0 p-0 py-2 '>
                                         <li>
-                                            <Link className=' text-secondary'>Orders</Link>
+                                            <Link to={'/edit-profile'} className=' text-secondary'>Edit Profile</Link>
                                         </li>
                                         <li>
-                                            <Link className=' text-secondary'>Orders</Link>
-                                        </li>
-                                        <li>
-                                            <Link className=' text-secondary'>Orders</Link>
-                                        </li>
-                                        <li>
-                                            <Link className=' text-secondary'>Orders</Link>
-                                        </li>
-                                        <li>
-                                            <Link className=' text-secondary'>Orders</Link>
+                                            <Link className=' text-secondary'>Logout</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -164,7 +172,7 @@ export default function Header() {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href="#action1" className='fw-bold text-black px-2 fs-5 py-lg-3 py-2'>
+                            <Link to={'/cart'} className='fw-bold text-black px-2 fs-5 py-lg-3 py-2'>
                                 <div className='text-center'>
                                     <FontAwesomeIcon icon={faBagShopping} />
                                     <div className='fw-medium position-relative' style={{ fontSize: '12px' }}>

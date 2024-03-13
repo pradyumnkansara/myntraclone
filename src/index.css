@@ -58,20 +58,58 @@ body {
 }
 
 /* Contact-us page */
-.cointainer{
+.cointainer {
   max-width: 980px;
-  margin: 5% auto ;
-  
+  margin: 5% auto;
+
 }
-.side-bottom{
+
+.side-bottom {
   bottom: 10px;
 }
-.middle{
+
+.middle {
   min-height: 525px;
 
 }
+
 /* cart page */
-.divider{
-border-top: 1px dashed #696B79;
-width: 50px;
+.divider {
+  border-top: 1px dashed #696B79;
+  display: inline-block;
+  height: 4px;
+  width: 50px;
+  margin-top: 19px;
+}
+
+
+
+/* --------------------------------------------------------------------------------------- */
+/* ADMIN PANEL */
+
+
+
+/* header */
+.form {
+  width: 700px;
+  margin-bottom: -150px;
+}
+
+/* Dashboard */
+.accordion-item:first-of-type>.accordion-header .accordion-button {}
+
+.accordion-button:not(.collapsed) {
+  background-color: black !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+
+.accordion-button:hover {
+  color: white !important;
+  background-color: black !important;
 }
