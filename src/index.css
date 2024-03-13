@@ -56,3 +56,22 @@ body {
 .login-box::placeholder span {
   color: #FF3F6c;
 }
+
+/* Contact-us page */
+.cointainer{
+  max-width: 980px;
+  margin: 5% auto ;
+  
+}
+.side-bottom{
+  bottom: 10px;
+}
+.middle{
+  min-height: 525px;
+
+}
+/* cart page */
+.divider{
+border-top: 1px dashed #696B79;
+width: 50px;
+}

@@ -12,6 +12,10 @@ import Product from './Pages/Product';
 import ProductDetails from './Pages/ProductDetails';
 import LogIn from './Pages/LogIn';
 import Register from './Pages/Register';
+import ContactUs from './Pages/ContactUs';
+import Cart from './Pages/Cart';
+import Profile from './Pages/Profile';
+import EditProfile from './Pages/EditProfile';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +38,23 @@ const router = createBrowserRouter([
     path: '/register',
     element: <Register/>
   },
+  {
+    path: '/Contact-us',
+    element: <ContactUs/>
+  },
+  {
+    path:'/Cart',
+    element : <Cart/>
+  },
+  {
+    path:'/Profile',
+    element : <Profile/>
+  },
+  {
+    path:'/EditProfile',
+    element : <EditProfile/>
+  }
+
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
